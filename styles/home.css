@@ -1,20 +1,22 @@
-main
-{
+main {
     display: flex;
     flex: 0 0 50%;
     flex-direction: column;
     margin: 1px 170px;
 }
+
 main .about-section {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     text-align: justify;
-    width: 90%;
+    width: 65%;
     margin: auto;
     margin-top: 25vh;
 }
+
 main .about-section .read-more-btn {
-    margin: 3rem auto; 
+    margin: 3rem auto;
 }
+
 main .about-section .read-more-btn a {
     text-decoration: none;
     color: #FFFFFF;
@@ -23,81 +25,102 @@ main .about-section .read-more-btn a {
     border: 1px solid #282626;
     transition: all 0.5s ease-in-out;
 }
+
 main .about-section .read-more-btn a:hover {
     color: #262626;
     background-color: #FFFFFF;
     padding: 1rem 2rem;
     border: 1px solid #282626;
 }
+
 main .image-section {
     width: 90%;
     margin: auto;
 }
+
 main .image-section img {
     width: 100%;
-    object-fit: contain;
+    object-fit: cover;
+    object-position: center top;
 }
 
-main .hexagon-wrapper{
-    width: 100%;
+main .hexagon-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 2rem;
+    width: 65%;
     margin: auto;
     position: relative;
     min-height: 410px;
-  }
-main .hexagon-wrapper .hex-img{
-    position: absolute;
-    object-fit: contain;
-  }
-main .hexagon-wrapper .img-hex{
+}
+
+main .hexagon-wrapper .hex-img {
+    object-fit: cover;
+}
+main .hexagon-wrapper .hex-img img {
+    height: 250px;
+}
+main .hexagon-wrapper .img-hex {
     width: 100%;
     max-width: 235px;
     -webkit-clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
-      clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
-  }
-  /* main .hexagon-wrapper.internal-hexagon {
+    clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+}
+
+/* main .hexagon-wrapper.internal-hexagon {
       position: absolute;
       left: 54%;
       width: 672px;
       top: 200px;
       z-index: 3;
   } */
-  
-  main  .hexagon-wrapper .hex-img.hex-1{
+
+/* main .hexagon-wrapper .hex-img.hex-1 {
     top: 0;
     left: 87px;
-  }
-  main  .hexagon-wrapper .hex-img.hex-2{
+}
+
+main .hexagon-wrapper .hex-img.hex-2 {
     top: 0;
     left: 347px;
-  }
-  main  .hexagon-wrapper .hex-img.hex-3{
+}
+
+main .hexagon-wrapper .hex-img.hex-3 {
     top: 0px;
     left: 606px;
-  }
-  main  .hexagon-wrapper .hex-img.hex-4{
+}
+
+main .hexagon-wrapper .hex-img.hex-4 {
     top: 0px;
     left: 867px;
-  }
-  main  .hexagon-wrapper .hex-img.hex-5{
+}
+
+main .hexagon-wrapper .hex-img.hex-5 {
     top: 196px;
     left: 219.5px;
-  }
-  main  .hexagon-wrapper .hex-img.hex-6{
+}
+
+main .hexagon-wrapper .hex-img.hex-6 {
     top: 196px;
     left: 484.5px;
-  }
-  main  .hexagon-wrapper .hex-img.hex-7{
+}
+
+main .hexagon-wrapper .hex-img.hex-7 {
     top: 196px;
     left: 749.5px;
-  }
+} */
+
 main .research-domain-section {
-    width: 90%;
+    width: 65%;
     margin: 4rem auto;
     display: flex;
     flex-direction: column;
     gap: 2rem;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
 }
+
 main .research-domain-section .heading {
     width: 100%;
     color: #891515;
@@ -105,56 +128,66 @@ main .research-domain-section .heading {
     font-weight: 800;
     font-size: 2.2rem;
 }
+
 main .research-domain-section .images {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 1.5rem;
 }
-main .research-domain-section .images img{
+
+main .research-domain-section .images img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
+
 main .research-domain-section .images .img1 {
     grid-column-start: 1;
     grid-column-end: 3;
     grid-row-start: 1;
     grid-row-end: 3;
 }
+
 main .research-domain-section .images .img2 {
     grid-column-start: 3;
     grid-column-end: 4;
     grid-row-start: 1;
     grid-row-end: 2;
 }
+
 main .research-domain-section .images .img3 {
     grid-column-start: 3;
     grid-column-end: 4;
     grid-row-start: 2;
     grid-row-end: 3;
 }
+
 main .research-domain-section .images .img4 {
     grid-column-start: 1;
     grid-column-end: 2;
     grid-row-start: 3;
     grid-row-end: 4;
 }
+
 main .research-domain-section .images .img5 {
     grid-column-start: 2;
     grid-column-end: 3;
     grid-row-start: 3;
     grid-row-end: 4;
 }
+
 main .research-domain-section .images .img6 {
     grid-column-start: 3;
     grid-column-end: 4;
     grid-row-start: 3;
     grid-row-end: 4;
 }
+
 main .contact-section-container {
-    width: 90%;
+    width: 65%;
     margin: 4rem auto;
 }
+
 main .contact-section-container .heading {
     width: 100%;
     color: #891515;
@@ -162,20 +195,24 @@ main .contact-section-container .heading {
     font-weight: 800;
     font-size: 2.2rem;
 }
+
 main .contact-section-container .contact-section {
     display: grid;
     grid-template-columns: 60% 40%;
     grid-gap: 2rem;
     margin: 4rem auto;
 }
+
 main .contact-section-container .contact-section img {
     width: 100%;
     height: 100%;
 }
-main .contact-section-container .contact-section .map-image iframe{
+
+main .contact-section-container .contact-section .map-image iframe {
     height: 100%;
     width: 100%;
 }
+
 main .contact-section-container .contact-section .address {
     display: flex;
     flex-direction: column;
@@ -184,53 +221,60 @@ main .contact-section-container .contact-section .address {
     gap: 1.5rem;
     font-size: 1.5rem;
 }
-main .contact-section-container .contact-section .address .address-actual{
+
+main .contact-section-container .contact-section .address .address-actual {
     font-size: 1.2rem;
 }
+
 main .contact-section-container .contact-section .address .address-title {
     width: 100%;
     color: #891515;
     font-weight: 800;
     font-size: 2rem;
 }
-main .contact-section-container .contact-section .address .email{
-    font-size:  1.2rem;
+
+main .contact-section-container .contact-section .address .email {
+    font-size: 1.2rem;
     display: flex;
     gap: 0.5rem;
 }
+
 main .contact-section-container .contact-section .address .email a {
     text-decoration: none;
     color: #262626;
 }
+
 @media screen and (max-width:1000px) {
 
 
-    main
-    {
+    main {
         /* margin-top: 8vh; */
         margin-left: 1rem;
         margin-right: 1rem;
     }
+
     main .about-section {
         margin-top: 25%;
     }
 
-    main .hexagon-wrapper{
+    main .hexagon-wrapper {
         width: 100%;
         margin: auto;
         position: relative;
         min-height: 370px;
-      }
-    main .hexagon-wrapper .hex-img{
-        position: absolute;
+    }
+
+    main .hexagon-wrapper .hex-img {
         object-fit: contain;
-      }
-    main .hexagon-wrapper .img-hex{
+    }
+
+    main .hexagon-wrapper .img-hex {
         width: 100%;
         max-width: 175px;
         -webkit-clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
-          clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
-      }
+        clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+    }
+
     /* main .hexagon-wrapper.internal-hexagon {
         position: absolute;
         left: 54%;
@@ -238,104 +282,94 @@ main .contact-section-container .contact-section .address .email a {
         top: 200px;
         z-index: 3;
     } */
-    
-    main  .hexagon-wrapper .hex-img.hex-1{
-    top: 0;
-    left: 67px;
-    }
-    main  .hexagon-wrapper .hex-img.hex-2{
-    top: 0;
-    left: 272px;
-    }
-    main  .hexagon-wrapper .hex-img.hex-3{
-    top: 0px;
-    left: 477px;
-    }
-    main  .hexagon-wrapper .hex-img.hex-4{
-    top: 0px;
-    left: 682px;
-    }
-    main  .hexagon-wrapper .hex-img.hex-5{
-    top: 175px;
-    left: 169.5px;
-    }
-    main  .hexagon-wrapper .hex-img.hex-6{
-    top: 175px;
-    left: 374.5px;
-    }
-    main  .hexagon-wrapper .hex-img.hex-7{
-    top: 175px;
-    left: 579.5px;
-    }
 }
+
 @media screen and (max-width:600px) {
     main .about-section {
         margin-top: 25vh;
     }
 }
+
 @media screen and (max-width:412px) {
     main .about-section {
         margin-top: 25vh;
     }
-    main .hexagon-wrapper{
+
+    main .hexagon-wrapper {
         width: 100%;
         margin: auto;
         position: relative;
         min-height: 620px;
-      }
-    main .hexagon-wrapper .hex-img{
-        position: absolute;
-        object-fit: contain;
-      }
-    main .hexagon-wrapper .img-hex{
+    }
+
+    main .hexagon-wrapper .hex-img {
+        object-fit: cover;
+    }
+
+    main .hexagon-wrapper .img-hex {
         width: 100%;
         max-width: 150px;
         -webkit-clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
-          clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
-      }
-      
-    main  .hexagon-wrapper .hex-img.hex-1{
-    top: 0px;
-    left: 118px;
+        clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
     }
-    main  .hexagon-wrapper .hex-img.hex-2{
-    top: 130px;
-    left: 33px;
+
+    main .hexagon-wrapper .hex-img.hex-1 {
+        top: 0px;
+        left: 118px;
     }
-    main  .hexagon-wrapper .hex-img.hex-3{
-    top: 130px;
-    left: 203px;
+
+    main .hexagon-wrapper .hex-img.hex-2 {
+        top: 130px;
+        left: 33px;
     }
-    main  .hexagon-wrapper .hex-img.hex-4{
-    top: 260px;
-    left: 118px;
+
+    main .hexagon-wrapper .hex-img.hex-3 {
+        top: 130px;
+        left: 203px;
     }
-    main  .hexagon-wrapper .hex-img.hex-5{
-    top: 390px;
-    left: 33px;
+
+    main .hexagon-wrapper .hex-img.hex-4 {
+        top: 260px;
+        left: 118px;
     }
-    main  .hexagon-wrapper .hex-img.hex-6{
-    top: 390px;
-    left: 203px;
+
+    main .hexagon-wrapper .hex-img.hex-5 {
+        top: 390px;
+        left: 33px;
     }
-    main  .hexagon-wrapper .hex-img.hex-7{
-    top: 520px;
-    left: 118px;
+
+    main .hexagon-wrapper .hex-img.hex-6 {
+        top: 390px;
+        left: 203px;
+    }
+
+    main .hexagon-wrapper .hex-img.hex-7 {
+        top: 520px;
+        left: 118px;
     }
 }
+
 @media screen and (max-width:768px) {
     main .research-domain-section .images {
         grid-template-columns: repeat(1, 1fr);
     }
-    main .contact-section-container .contact-section .map-image iframe{
+
+    main .contact-section-container .contact-section .map-image iframe {
         height: 400px;
     }
-    main .research-domain-section .images .img1, main .research-domain-section .images .img2, main .research-domain-section .images .img3, main .research-domain-section .images .img4, main .research-domain-section .images .img5, main .research-domain-section .images .img6 {
+
+    main .research-domain-section .images .img1,
+    main .research-domain-section .images .img2,
+    main .research-domain-section .images .img3,
+    main .research-domain-section .images .img4,
+    main .research-domain-section .images .img5,
+    main .research-domain-section .images .img6 {
         grid-column-start: unset;
         grid-column-end: unset;
         grid-row-start: unset;
-        grid-row-end: unset;  
+        grid-row-end: unset;
     }
+
     main .contact-section-container .contact-section {
         grid-template-columns: 100%;
     }

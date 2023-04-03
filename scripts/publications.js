@@ -194,7 +194,7 @@ const publications = [
         doi: " Telecommunication Systems. https://assets.researchsquare.com/files/rs-221801/v1_covered.pdf?c=1631854471",
         year: "2021"
     },
-    
+
 ]
 yearArray.forEach(year => {
     const btn = document.createElement("button")
@@ -207,7 +207,7 @@ const btnArray = document.querySelectorAll(".year-btn")
 const publicationsContainer = document.querySelector(".publications-container")
 btnArray.forEach(btn => {
     btn.addEventListener("click", (e) => {
-        if(e.target.innerHTML) {
+        if (e.target.innerHTML) {
             activeYear = e.target.innerHTML
         }
         dispYear.innerHTML = activeYear
@@ -217,7 +217,7 @@ btnArray.forEach(btn => {
             child = publicationsContainer.lastElementChild;
         }
         publications.forEach(publication => {
-            if(publication.year === activeYear) {
+            if (publication.year === activeYear) {
                 let parentDiv = document.createElement("div")
                 parentDiv.classList.add("publication")
                 let titleDiv = document.createElement("div")
@@ -246,7 +246,7 @@ btnArray.forEach(btn => {
     })
 })
 publications.forEach(publication => {
-    if(publication.year === activeYear) {
+    if (publication.year === activeYear) {
         let parentDiv = document.createElement("div")
         parentDiv.classList.add("publication")
         let titleDiv = document.createElement("div")

@@ -1,12 +1,16 @@
-footer .email, footer .phone-number {
+footer .email,
+footer .phone-number {
     display: flex;
     gap: 0.5rem;
     color: #FFFFFF;
 }
-footer .email a, footer .phone-number a {
+
+footer .email a,
+footer .phone-number a {
     text-decoration: none;
     color: #FFFFFF;
 }
+
 footer {
     background-color: #891515;
     display: flex;
@@ -18,10 +22,12 @@ footer {
     padding: 1rem;
     font-size: 1.5rem;
 }
+
 footer .social-icons {
     display: flex;
     gap: 1rem;
 }
+
 footer .social-icons a img {
     width: 45px;
     height: 45px;

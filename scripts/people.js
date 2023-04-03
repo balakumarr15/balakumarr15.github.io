@@ -167,7 +167,7 @@ const students = [
     },
 ]
 students.forEach(student => {
-    if(student.year === "fourth-year") {
+    if (student.year === "fourth-year") {
         let stud = `<div class="student-member-card">
                         <div class="face face1">
                             <div class="content">
@@ -186,7 +186,7 @@ students.forEach(student => {
                     </div>`
         fourthYearContainer.innerHTML += stud
     }
-    if(student.year === "third-year") {
+    if (student.year === "third-year") {
         let stud = `<div class="student-member-card">
                         <div class="face face1">
                             <div class="content">
@@ -205,7 +205,7 @@ students.forEach(student => {
                     </div>`
         thirdYearContainer.innerHTML += stud
     }
-    if(student.year === "others") {
+    if (student.year === "others") {
         let stud = `<div class="student-member-card">
                         <div class="face face1">
                             <div class="content">
@@ -224,7 +224,7 @@ students.forEach(student => {
                     </div>`
         otherContainer.innerHTML += stud
     }
-    if(student.year === "alumni") {
+    if (student.year === "alumni") {
         let stud = `<div class="student-member-card">
                         <div class="face face1">
                             <div class="content">
