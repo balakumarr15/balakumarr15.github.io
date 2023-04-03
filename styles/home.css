@@ -266,6 +266,51 @@ main .contact-section-container .contact-section .address .email a {
     main .about-section {
         margin-top: 25vh;
     }
+    main .hexagon-wrapper{
+        width: 100%;
+        margin: auto;
+        position: relative;
+        min-height: 620px;
+      }
+    main .hexagon-wrapper .hex-img{
+        position: absolute;
+        object-fit: contain;
+      }
+    main .hexagon-wrapper .img-hex{
+        width: 100%;
+        max-width: 150px;
+        -webkit-clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+          clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+      }
+      
+    main  .hexagon-wrapper .hex-img.hex-1{
+    top: 0px;
+    left: 118px;
+    }
+    main  .hexagon-wrapper .hex-img.hex-2{
+    top: 130px;
+    left: 33px;
+    }
+    main  .hexagon-wrapper .hex-img.hex-3{
+    top: 130px;
+    left: 203px;
+    }
+    main  .hexagon-wrapper .hex-img.hex-4{
+    top: 260px;
+    left: 118px;
+    }
+    main  .hexagon-wrapper .hex-img.hex-5{
+    top: 390px;
+    left: 33px;
+    }
+    main  .hexagon-wrapper .hex-img.hex-6{
+    top: 390px;
+    left: 203px;
+    }
+    main  .hexagon-wrapper .hex-img.hex-7{
+    top: 520px;
+    left: 118px;
+    }
 }
 @media screen and (max-width:412px) {
     main .about-section {
@@ -287,14 +332,7 @@ main .contact-section-container .contact-section .address .email a {
         -webkit-clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
           clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
       }
-    /* main .hexagon-wrapper.internal-hexagon {
-        position: absolute;
-        left: 54%;
-        width: 672px;x
-        top: 200px;
-        z-index: 3;
-    } */
-    
+
     main  .hexagon-wrapper .hex-img.hex-1{
     top: 0px;
     left: 118px;
