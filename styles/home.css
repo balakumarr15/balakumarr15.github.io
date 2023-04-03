@@ -1,10 +1,12 @@
 main
 {
     display: flex;
+    flex: 0 0 50%;
     flex-direction: column;
+    margin: 1px 170px;
 }
 main .about-section {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     text-align: justify;
     width: 90%;
     margin: auto;
@@ -40,7 +42,7 @@ main .hexagon-wrapper{
     width: 100%;
     margin: auto;
     position: relative;
-    min-height: 620px;
+    min-height: 410px;
   }
 main .hexagon-wrapper .hex-img{
     position: absolute;
@@ -48,7 +50,7 @@ main .hexagon-wrapper .hex-img{
   }
 main .hexagon-wrapper .img-hex{
     width: 100%;
-    max-width: 275px;
+    max-width: 235px;
     -webkit-clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
       clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
   }
@@ -62,31 +64,31 @@ main .hexagon-wrapper .img-hex{
   
   main  .hexagon-wrapper .hex-img.hex-1{
     top: 0;
-    left: 117px;
+    left: 87px;
   }
   main  .hexagon-wrapper .hex-img.hex-2{
     top: 0;
-    left: 442px;
+    left: 347px;
   }
   main  .hexagon-wrapper .hex-img.hex-3{
     top: 0px;
-    left: 767px;
+    left: 606px;
   }
   main  .hexagon-wrapper .hex-img.hex-4{
     top: 0px;
-    left: 1092px;
+    left: 867px;
   }
   main  .hexagon-wrapper .hex-img.hex-5{
-    top: 275px;
-    left: 279.5px;
+    top: 196px;
+    left: 219.5px;
   }
   main  .hexagon-wrapper .hex-img.hex-6{
-    top: 275px;
-    left: 604.5px;
+    top: 196px;
+    left: 484.5px;
   }
   main  .hexagon-wrapper .hex-img.hex-7{
-    top: 275px;
-    left: 929.5px;
+    top: 196px;
+    left: 749.5px;
   }
 main .research-domain-section {
     width: 90%;
@@ -94,7 +96,7 @@ main .research-domain-section {
     display: flex;
     flex-direction: column;
     gap: 2rem;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
 }
 main .research-domain-section .heading {
     width: 100%;
@@ -182,6 +184,9 @@ main .contact-section-container .contact-section .address {
     gap: 1.5rem;
     font-size: 1.5rem;
 }
+main .contact-section-container .contact-section .address .address-actual{
+    font-size: 1.2rem;
+}
 main .contact-section-container .contact-section .address .address-title {
     width: 100%;
     color: #891515;
@@ -189,6 +194,7 @@ main .contact-section-container .contact-section .address .address-title {
     font-size: 2rem;
 }
 main .contact-section-container .contact-section .address .email{
+    font-size:  1.2rem;
     display: flex;
     gap: 0.5rem;
 }

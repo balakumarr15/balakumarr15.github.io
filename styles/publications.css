@@ -20,6 +20,7 @@ main .publications-section-container .years-container .year-container {
     white-space: nowrap; 
 }
 main .publications-section-container .years-container .year-container .year-btn {
+    font-size: 0.9rem;
     display: inline-block;
     margin: 1rem;
     padding: 0.8rem 1.5rem;
